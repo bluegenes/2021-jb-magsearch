@@ -1,7 +1,7 @@
 outdir: output.sketch_genomes
 basename: jb-genomes
 
-genome_csv: JB_ref_mag_genomes.csv
+genome_csv: inputs/JB_ref_mag_genomes.csv
 
 ksize: [21,31,51]
 scaled: 1000

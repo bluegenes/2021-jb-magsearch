@@ -1,0 +1,11 @@
+query_name: jb.k31
+#query_name: jb-singleton.k21
+#query_name: jb-singleton.k31
+#query_sigs: /home/ntpierce/2021-jb-magsearch/inputs/clade_reps_all_031921.singleton.siglist
+query_sigs: /home/ntpierce/2021-jb-magsearch/inputs/clade_reps_all_031921.siglist
+wort_sigs: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs
+s3_dir: outputs/wort-sra/sigs
+threshold: 0
+#ksize: 21
+ksize: 31
+out_dir: "output.magsearch"

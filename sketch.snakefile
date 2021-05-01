@@ -1,6 +1,6 @@
 """
 Author: N Tessa Pierce, UC Davis Lab for Data Intensive Biology
-Run: snakemake -s  download-and-sketch.snakefile -n
+Run: conda activate test-magsearch; snakemake -s sketch.snakefile -n
 """
 
 import os
