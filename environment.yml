@@ -1,4 +1,4 @@
-name: test-magsearch
+name: jb-magsearch
 channels:
   - conda-forge
   - bioconda
@@ -6,6 +6,8 @@ channels:
 dependencies:
   - python=3.8
   - snakemake=6.1.0
-  - pandas=1.2.3
+  - pandas>=1.2.4
   - seaborn=0.11.0
+  - jupyterlab
+  - tqdm
   - screed
