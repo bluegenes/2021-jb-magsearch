@@ -1,6 +1,6 @@
 # 2021-jb-magsearch
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bluegenes/2021-jb-magsearch/HEAD?filepath=notebooks%2F%20001.filter-results.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bluegenes/2021-jb-magsearch/HEAD?filepath=notebooks%2F%2001.filter-results.ipynb)
 
 Steps:
   1. sketch genomes with [sourmash](https://github.com/dib-lab/sourmash): `sketch.snakefile`
