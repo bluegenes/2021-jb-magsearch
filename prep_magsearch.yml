@@ -1,7 +1,9 @@
 outdir: output.sketch_genomes
-basename: jb-genomes
+basename: jb-genomes2
 
-genome_csv: inputs/JB_ref_mag_genomes.csv
+#genome_csv: inputs/JB_ref_mag_genomes.csv
+genome_id_list: inputs/JB_ref_mag_genomes2/sourmash_submit2.ids
+data_dir: inputs/JB_ref_mag_genomes2/
 
 ksize: [21,31,51]
 scaled: 1000

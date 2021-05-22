@@ -18,8 +18,24 @@ if not isinstance(scaled, list):
 if not isinstance(ksize, list):
     config["ksize"] = [ksize]
 
-genome_info  = pd.read_csv(config["genome_csv"], header=0)
+if config.get("genome_csv"):
+    genome_info  = pd.read_csv(config["genome_csv"], header=0)
+else:
+    namelist = config.get("genome_id_list")
+    if not namelist:
+       print("please input some genomes via 'genome_csv' or 'genome_id_list' in the config'")
+       sys.exit(-1)
+    names = [x.rstrip() for x in open(namelist)]
+    data_dir = config.get("data_dir", "inputs")
+    gInfo = []
+    for name in names:
+        genome_file = os.path.join(data_dir, f"{name}.fna")
+        gInfo.append((name,genome_file))
+    # tuples to dataframe
+    genome_info = pd.DataFrame.from_records(gInfo, columns=['name', 'filename'])
+
 genome_info.set_index("name", inplace=True)
+
 
 rule all:
     input: os.path.join(out_dir, f"{basename}.siglist.txt")
