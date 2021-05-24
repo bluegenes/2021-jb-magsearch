@@ -1,8 +1,10 @@
-query_name: jb.k31
-query_sigs: /home/ntpierce/2021-jb-magsearch/output.sketch_genomes/jb-genomes.siglist.txt
+#query_name: jb.k31
+query_name: jb.k21
+#query_sigs: /home/ntpierce/2021-jb-magsearch/output.sketch_genomes/jb-genomes.siglist.txt
+query_sigs: /home/ntpierce/2021-jb-magsearch/output.sketch_genomes/jb-genomes2.siglist.txt
 wort_sigs: /group/ctbrowngrp/irber/data/wort-data/wort-sra/sigs
 s3_dir: outputs/wort-sra/sigs
 threshold: 0.01
-#ksize: 21
-ksize: 31
+ksize: 21
+#ksize: 31
 out_dir: "output.genome-magsearch"
